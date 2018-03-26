@@ -11,67 +11,71 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
         crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <title>frontdev2 | T.Pondo</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>frontdev2 | T.Pondo</title>
 </head>
 
 <body>
-    <main id="welcome-page" itemprop="mainEntityOfPage">
-        <nav id="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <div id="logo"></div>
-            <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <i class="fas fa-search" itemscope itemtype="http://schema.org/SearchAction"></i>
-            <i class="fas fa-bars"></i>
-        </nav>
+    <section class="grid-container">
+        <div id="scroll-to-top">
+            <a href="#home">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+        <main id="home" itemprop="mainEntityOfPage">
+            <nav id="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <div class="logo"></div>
+                <ul>
+                    <li>
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <i class="fas fa-search" itemscope itemtype="http://schema.org/SearchAction"></i>
+                <i class="fas fa-bars" id="hamburger-nav"></i>
+            </nav>
+            <header id="naglowek">
+                <h1 itemprop="headline">WEB DESIGN</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi harum quisquam tempore, reprehenderit odit
+                    eos tenetur optio fugiat dolorum tempora asperiores eligendi fuga eaque, maiores laboriosam. Eos maiores
+                    incidunt facilis!</p>
+                <button type="button">REALLY!?</button>
+                <div id="play">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </header>
 
-        <header id="naglowek">
-            <h1 itemprop="headline">Web Design</h1>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris 
-                condimentum, ut fermentum massa justo sit amet 
-                erat a ante venenatis dapibus posuere velit.
-            </p>
+        </main>
+        <article id="about">
+            <section class="post-1">
+                <h3>AMET CONDIMENTUM</h3>
+                <p>Dolor</p>
+            </section>
+            <section class="post-2">
+                <h3>LOREM CURSUS</h3>
+                <p>Ligula</p>
+            </section>
+            <section class="post-3">
+                <h3>CONDIMENTUM ULTRICIES</h3>
+                <p>Consectetur</p>
+            </section>
+            <section class="post-4">
+                <h3>RIDICULUS ORNARE</h3>
+                <p>Ullameorper</p>
+            </section>
 
-            <button type="button"> 
-                REALLY?
-                 </button>
-               
-        </header>
+        </article>
 
-        <div id="play"> <i class="fas fa-chevron-right"></i></div>
-      
-      
-    
-    </main>
-    <aside id="image-row">
-        <ul>
-            <li>
-                    <h3>AMET CONDIMENTUM</h3>
-                    <p>Color</p>
-            </li>
-            <li>
-                    <h3>LOREM CURSUS</h3>
-                    <p>Ligula</p>
-            </li>
-            <li>
-                    <h3>CONDIMENTUM ULTRICIES</h3>
-                    <p>Consectetur</p>
-            </li>
-            <li>
-                    <h3>RIDICULUS ORNARE</h3>
-                    <p>Ullameorper</p>
-            </li>
-        </ul>
-       
-    </aside>
 
-    <footer id="stopka">
-        <div class="cols">
-            <div>
+        <address id="contact">
+            <div class="contact-content">
                 <h3>FOLLOW US</h3>
                 <ul>
                     <li>Twitter</li>
@@ -81,40 +85,41 @@
                     <li>YouTube</li>
                 </ul>
             </div>
-            <div>
-                    <h3>GET TO KNOW US</h3>
-                    <ul>
-                        <li>About</li>
-                        <li>Policies</li>
-                        <li>Careers</li>
-                        <li>Press</li>
-                        <li>Developers</li>
-                    </ul>
+            <div class="contact-content">
+                <h3>GET TO KNOW US</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Policies</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Developers</li>
+                </ul>
             </div>
-            <div>
-                    <h3>LOCATIONS</h3>
-                    <ul>
-                        <li>Detroit</li>
-                        <li>London</li>
-                        <li>Florida</li>
-                        <li>Las Vegas</li>
-                        <li>California</li>
-                    </ul>
+            <div class="contact-content">
+                <h3>LOCATIONS</h3>
+                <ul>
+                    <li>Detroit</li>
+                    <li>London</li>
+                    <li>Florida</li>
+                    <li>Las Vegas</li>
+                    <li>California</li>
+                </ul>
             </div>
-            <div>
-                <h3>OUR MISSION</h3>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortot mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus.
-                    Integer posuere erat a ante venenatis dapibus 
-                    posuere velit aliquet. Praesent commodo cursus magna, 
-                    vel scelerisque nisl consectetur et. Sed posuere consectetur.
-                </p>
+            <div class="contact-content">
+                <h3>FOLLOW US</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia debitis nobis dolorum laboriosam accusantium
+                    velit voluptatum! Repudiandae molestias possimus blanditiis temporibus quo, quaerat veritatis, ab eius
+                    accusantium ipsa deserunt.</p>
             </div>
-        </div>
-        <div class="rectangle">
-                Copyright © 2018 by <a href="https://example.net/author" rel="author">T.Pondo</a>
-        </div>
-    </footer>
+
+        </address>
+        <footer id="stopka">
+            Copyright © 2018 by
+            <a href="https://example.net/author" rel="author"> T.Pondo </a>
+        </footer>
+
+    </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
